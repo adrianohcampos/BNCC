@@ -1,0 +1,22 @@
+{
+    "name": "adrianohcampos/bncc",
+    "description": "Consulta na Base Nacional Comum Curricular (BNCC)",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Adriano Hermes de Campos",
+            "email": "adrianohcampos@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AdrianoHCampos\\BNCC\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "phpoffice/phpspreadsheet": "^1.25"
+    }
+}
