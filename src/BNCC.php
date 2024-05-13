@@ -88,7 +88,8 @@ class BNCC
             $client = new \GuzzleHttp\Client();
             $resource = \GuzzleHttp\Psr7\Utils::tryFopen($path, 'w');
             $response = $client->request('POST', $urlExtracao, [
-                'form_params' => $consulta,
+                'headers' => ['Content-Type' => 'application/json'],
+                'body' => json_encode($consulta),
                 'sink' => $resource
             ]);
         } catch (\RuntimeException $e) {
